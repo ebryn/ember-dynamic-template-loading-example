@@ -2,4 +2,9 @@
 //= require handlebars.runtime
 //= require ember
 //= require app
-//= require_tree .
+//= require templates/index
+//= require_tree ./routes
+
+App.Router.map(function() {
+  this.route('somewhereElse');
+});
